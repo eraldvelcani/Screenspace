@@ -1,0 +1,47 @@
+:root {
+    --primary-color: #26172c;
+    --secondary-color: #4f2353;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    /* font-family: ''; */
+    margin: 0;
+    background-color: var(--primary-color);
+
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--secondary-color);
+}
+
+.search {
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 4px;
+    background-color: transparent;
+    font-family: inherit;
+    color: white;
+}
+
+.search:focus {
+    outline: none;
+    background-color: var(--primary-color);
+}
+
+.search::placeholder {
+    color: gainsboro;
+}
+
+main {
+    
+}
