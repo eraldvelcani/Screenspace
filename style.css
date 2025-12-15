@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 :root {
     --primary-color: #26172c;
     --secondary-color: #4f2353;
@@ -10,9 +12,10 @@
 
 
 body {
-    /* font-family: ''; */
+    font-family: 'Lato', sans-serif; 
     margin: 0;
     background-color: var(--primary-color);
+    color: white;
 
 }
 
@@ -27,7 +30,7 @@ header {
     border: 2px solid var(--primary-color);
     border-radius: 5px;
     font-size: 1rem;
-    padding: 4px;
+    padding: 10px;
     background-color: transparent;
     font-family: inherit;
     color: white;
@@ -43,5 +46,68 @@ header {
 }
 
 main {
-    
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.movie {
+    position: relative;
+    overflow: hidden;
+    margin: 1rem;
+    width: 300px;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+}
+
+.movie-sum {
+    position: absolute;
+    bottom: 0;
+    max-height: 100%;
+    overflow: hidden;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    color: rgb(209, 209, 209);
+    transform: translateY(103%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.movie:hover .movie-sum {
+    transform: translateY(0);
+}
+
+.title-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5rem 0 0.5rem;
+    color: #b1b1b1;
+}
+
+.title-rating span {
+    padding: 0.35rem 0.5rem;
+    background-color: var(--primary-color);
+}
+
+.title-rating span.awful {
+    color: red;
+}
+
+.title-rating span.average {
+    color: rgb(255, 161, 20);
+}
+
+.title-rating span.great {
+    color: rgb(47, 160, 2);
+}
+
+.title-rating h3 {
+    margin: 0 0 10px 0;
+    color: #B8EBD0;
+}
+
+
+.movie img {
+    width: 100%;
+}
+
