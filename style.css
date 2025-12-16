@@ -38,6 +38,7 @@ header {
 
 .search:focus {
     outline: none;
+    color: white;
     background-color: var(--primary-color);
 }
 
