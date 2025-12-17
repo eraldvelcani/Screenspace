@@ -58,6 +58,8 @@ main {
     width: 300px;
     border-radius: 4px;
     background-color: var(--secondary-color);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    
 }
 
 .movie-sum {
@@ -83,6 +85,7 @@ main {
     flex-direction: column;
     padding: 0.5rem 0 0.5rem;
     color: #b1b1b1;
+    font-weight: 600;
 }
 
 .title-rating span {
@@ -104,7 +107,10 @@ main {
 
 .title-rating h3 {
     margin: 0 0 10px 0;
+    padding: 0 10px 0 10px;
     color: #B8EBD0;
+    text-align: center;
+    min-height: 2em;
 }
 
 
